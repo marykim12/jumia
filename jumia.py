@@ -61,7 +61,7 @@ for count in range(min_length):
 data_2_csv = pd.DataFrame({'name': item_names[:min_length],
                            'price': item_prices[:min_length],
                            'Discount': item_discounts[:min_length],
-                           #'Rating': item_ratings[:min_length]
+                           'Rating': item_ratings[:min_length]
                            })
 data_2_csv.to_csv("jumia.csv", index=False)
 print(data_2_csv)
